@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        04/09/2018  11:41:18  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    08/25/2023  11:52:44  PAGE 1
 
 
-BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-E:\KEIL\C51\BIN\BL51.EXE main.obj TO LED…¡À∏
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+F:\KEIL_V5\C51\C51\BIN\BL51.EXE main.obj TO LED…¡À∏
 
 
 MEMORY MODEL: SMALL
@@ -10,7 +10,7 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
-  E:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\KEIL_V5\C51\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  LED…¡À∏ (MAIN)
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  LED…¡À∏ (MAIN)
   -------         PROC          _DELAY
   D:0006H         SYMBOL        x
   C:0023H         LINE#         3
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/09/2018  11:41:18  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  08/25/2023  11:52:44  PAGE 2
 
 
   C:0023H         LINE#         4
