@@ -1,3 +1,9 @@
+/*
+ * @Author: Moerjie
+ * @Data: Do not edit
+ * @LastEditTime: 2023-08-28 13:38:40
+ * @FilePath: \³ÌÐò\main.c
+ */
 #include<reg51.h>
 sbit LED_R = P0^0;		  //LED½ÓP0.0
 sbit LED_B = P0^1;
