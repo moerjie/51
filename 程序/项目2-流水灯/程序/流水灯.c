@@ -9,8 +9,8 @@ void main()
 	unsigned char i;
 	while(1)
 	{
-	P0 = LED[i];		  //调用数组内的数据
-	delay(5000);		 //延时
+	P1 = LED[i];		  //调用数组内的数据
+	delay(500000);		 //延时
 	i++;				//循环一次，变量i加1
 	if(i>=8)i=0;	   //i=8，清零
 	}

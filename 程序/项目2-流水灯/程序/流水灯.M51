@@ -1,19 +1,19 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        05/07/2017  15:59:47  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    09/04/2023  18:59:45  PAGE 1
 
 
-BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\安装目录\KEIL4\C51\BIN\BL51.EXE 流水灯.obj TO 流水灯
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+F:\KEIL_V5\C51\C51\BIN\BL51.EXE 流水灯.obj TO 流水灯
 
 
 MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  流水灯.obj (流水灯)
-  D:\安装目录\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  流水灯.obj (______)
+  F:\KEIL_V5\C51\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
-LINK MAP OF MODULE:  流水灯 (流水灯)
+LINK MAP OF MODULE:  流水灯 (______)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -26,40 +26,40 @@ LINK MAP OF MODULE:  流水灯 (流水灯)
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     001DH     UNIT         ?PR?MAIN?流水灯
+            CODE    0003H     001DH     UNIT         ?PR?MAIN?______
             CODE    0020H     000CH     UNIT         ?C_C51STARTUP
-            CODE    002CH     000BH     UNIT         ?PR?_DELAY?流水灯
-            CODE    0037H     0008H     UNIT         ?CO?流水灯
+            CODE    002CH     000BH     UNIT         ?PR?_DELAY?______
+            CODE    0037H     0008H     UNIT         ?CO?______
 
 
 
-OVERLAY MAP OF MODULE:   流水灯 (流水灯)
+OVERLAY MAP OF MODULE:   流水灯 (______)
 
 
 SEGMENT                          DATA_GROUP 
   +--> CALLED SEGMENT          START    LENGTH
 ----------------------------------------------
 ?C_C51STARTUP                  -----    -----
-  +--> ?PR?MAIN?流水灯
+  +--> ?PR?MAIN?______
 
-?PR?MAIN?流水灯                0008H    0001H
-  +--> ?CO?流水灯
-  +--> ?PR?_DELAY?流水灯
+?PR?MAIN?______                0008H    0001H
+  +--> ?CO?______
+  +--> ?PR?_DELAY?______
 
 
 
-SYMBOL TABLE OF MODULE:  流水灯 (流水灯)
+SYMBOL TABLE OF MODULE:  流水灯 (______)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        流水灯
+  -------         MODULE        ______
   C:0000H         SYMBOL        _ICE_DUMMY_
-  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
   C:002CH         PUBLIC        _delay
   C:0003H         PUBLIC        main
   C:0037H         PUBLIC        LED
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/07/2017  15:59:47  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  09/04/2023  18:59:45  PAGE 2
 
 
   -------         PROC          _DELAY
@@ -83,7 +83,7 @@ SYMBOL TABLE OF MODULE:  流水灯 (流水灯)
   C:0014H         LINE#         15
   C:001EH         LINE#         16
   -------         ENDPROC       MAIN
-  -------         ENDMOD        流水灯
+  -------         ENDMOD        ______
 
 Program Size: data=10.0 xdata=0 code=63
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
