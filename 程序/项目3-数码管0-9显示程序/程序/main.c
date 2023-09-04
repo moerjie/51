@@ -10,7 +10,7 @@ void main()
 {
 	while(1)
 	{
-		P0 = seven_seg[i];//显示数字
+		P1 = seven_seg[i];//显示数字
 		delay(50000);//延时
 		i++;
 		if(i>9)i = 0;

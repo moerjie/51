@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        04/09/2018  11:48:29  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    09/04/2023  11:34:09  PAGE 1
 
 
-BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-E:\KEIL\C51\BIN\BL51.EXE main.obj TO 数码管0-9显示程序
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+F:\KEIL_V5\C51\C51\BIN\BL51.EXE main.obj TO 数码管0-9显示程序
 
 
 MEMORY MODEL: SMALL
@@ -10,8 +10,8 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
-  E:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
-  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+  F:\KEIL_V5\C51\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\KEIL_V5\C51\C51\LIB\C51S.LIB (?C_INIT)
 
 
 LINK MAP OF MODULE:  数码管0-9显示程序 (MAIN)
@@ -58,8 +58,8 @@ SYMBOL TABLE OF MODULE:  数码管0-9显示程序 (MAIN)
 
   -------         MODULE        MAIN
   C:0000H         SYMBOL        _ICE_DUMMY_
-  D:0080H         PUBLIC        P0
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/09/2018  11:48:29  PAGE 2
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  09/04/2023  11:34:09  PAGE 2
 
 
   C:00ACH         PUBLIC        _delay
