@@ -11,8 +11,7 @@ void main()
 {
 	while(1)
 	{
-		P0=seven_seg[i];
-		P1^0 = 0x0;
+		P1=seven_seg[i];
 		delay(50000);//ÑÓÊ±
 		i++;
 		if(i>=8)
