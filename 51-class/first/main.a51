@@ -13,7 +13,7 @@ main:
     ;sjmp delay
 
 delay:
-    mov r7,#200
+    mov r7,#100
 delay1:    
     mov r6,#10
     DJNZ r6,$
