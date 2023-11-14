@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  LUT                                                                  10/17/2023 10:55:13 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN lut.OBJ
+ASSEMBLER INVOKED BY: F:\Keil_v5\C51\C51\BIN\A51.EXE lut.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 E541              1     MOV A,41H
+0002 110E              2     ACALL SQR
+0004 F9                3     MOV R1,A
+0005 E542              4     MOV A,42H
+0007 110E              5     ACALL SQR
+0009 29                6     ADD A,R1
+000A F540              7     MOV 40H,A
+000C 80FE              8     SJMP $
+                       9         
+000E 900013           10         SQR:MOV DPTR,#TAB
+0011 93               11         MOVC A,@A+DPTR
+0012 22               12         RET
+                      13         
+0013 00010409         14         TAB:DB 0,1,4,9,16,25,36,49,64,81
+0017 10192431                
+001B 4051                    
+                      15             END
+A51 MACRO ASSEMBLER  LUT                                                                  10/17/2023 10:55:13 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+SQR. . . . . . . .  C ADDR   000EH   A   
+TAB. . . . . . . .  C ADDR   0013H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

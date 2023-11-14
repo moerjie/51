@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    09/06/2023  08:42:10  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/10/2023  15:58:07  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -58,8 +58,8 @@ SYMBOL TABLE OF MODULE:  数码管0-9显示程序 (MAIN)
 
   -------         MODULE        MAIN
   C:0000H         SYMBOL        _ICE_DUMMY_
-  D:0090H         PUBLIC        P1
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  09/06/2023  08:42:10  PAGE 2
+  D:0080H         PUBLIC        P0
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/10/2023  15:58:07  PAGE 2
 
 
   C:00ACH         PUBLIC        _delay
@@ -68,22 +68,22 @@ SYMBOL TABLE OF MODULE:  数码管0-9显示程序 (MAIN)
   D:0008H         PUBLIC        i
   -------         PROC          _DELAY
   D:0006H         SYMBOL        x
+  C:00ACH         LINE#         5
   C:00ACH         LINE#         6
   C:00ACH         LINE#         7
-  C:00ACH         LINE#         8
-  C:00B6H         LINE#         9
+  C:00B6H         LINE#         8
   -------         ENDPROC       _DELAY
   -------         PROC          MAIN
+  C:008FH         LINE#         9
   C:008FH         LINE#         10
   C:008FH         LINE#         11
   C:008FH         LINE#         12
   C:008FH         LINE#         13
-  C:008FH         LINE#         14
-  C:0097H         LINE#         15
-  C:009EH         LINE#         16
-  C:00A0H         LINE#         17
-  C:00A7H         LINE#         18
-  C:00AAH         LINE#         19
+  C:0097H         LINE#         14
+  C:009EH         LINE#         15
+  C:00A0H         LINE#         16
+  C:00A7H         LINE#         17
+  C:00AAH         LINE#         18
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 

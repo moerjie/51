@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  TEST                                                                 10/17/2023 11:40:13 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\TEST.obj
+ASSEMBLER INVOKED BY: F:\Keil_v5\C51\C51\BIN\A51.EXE TEST.a51 SET(SMALL) DEBUG PRINT(.\Listings\TEST.lst) OBJECT(.\Objec
+                      ts\TEST.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;MOV A,41H
+                       2     ;ACALL SQR
+                       3     ;MOV R1,A
+                       4     ;MOV A,42H
+                       5     ;ACALL SQR
+                       6     ;ADD A,R1
+                       7     ;MOV 40H,A
+                       8     ;SJMP $
+                       9         
+                      10         ;SQR:MOV DPTR,#TAB
+                      11         ;MOVC A,@A+DPTR
+                      12         ;RET
+                      13         
+                      14         ;TAB:DB 0,1,4,9,16,25,36,49,64,81
+                      15             ;END
+                      16             
+                      17             
+                      18             
+                      19     ;MOV A,#7AH
+                      20     ;MOV R0,#30H
+                      21     ;MOV 30H,#0A5H
+                      22     ;SETB C
+                      23     ;SUBB A,@R0
+                      24     
+0000 856081           25     MOV SP,60H
+2000                  26     ORG 2000H
+2000 123000           27         LCALL 3000H
+*** WARNING #A41 IN 27 (TEST.a51, LINE 27): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  TEST                                                                 10/17/2023 11:40:13 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+SP . . . . . . . .  D ADDR   0081H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

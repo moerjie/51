@@ -1,0 +1,30 @@
+MOV A,10H
+MOV 30
+
+;MOV A,41H
+;ACALL SQR
+;MOV R1,A
+;MOV A,42H
+;ACALL SQR
+;ADD A,R1
+;MOV 40H,A
+;SJMP $
+    
+    ;SQR:MOV DPTR,#TAB
+    ;MOVC A,@A+DPTR
+    ;RET
+    
+    ;TAB:DB 0,1,4,9,16,25,36,49,64,81
+        ;END
+        
+        
+        
+;MOV A,#7AH
+;MOV R0,#30H
+;MOV 30H,#0A5H
+;SETB C
+;SUBB A,@R0
+
+;MOV SP,60H
+;ORG 2000H
+    ;LCALL 3000H

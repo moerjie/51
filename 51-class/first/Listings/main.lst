@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 11/14/2023 14:49:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main.obj
+ASSEMBLER INVOKED BY: F:\Keil_v5\C51\C51\BIN\A51.EXE main.a51 SET(SMALL) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\Objec
+                      ts\main.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;ORG 0000H
+                       2         ;LJMP main
+                       3     
+0000                   4     ORG 0000h
+0000                   5     main:
+                       6         
+0000 04                7         inc a
+0001 B46404            8         cjne a,#100,delay
+0004 B290              9         cpl p1.0
+0006 7400             10         mov a,#0
+                      11     
+                      12     ;notog:
+                      13         ;sjmp delay
+                      14     
+0008                  15     delay:
+0008 7FC8             16         mov r7,#200
+000A                  17     delay1:    
+000A 7E0A             18         mov r6,#10
+000C DEFE             19         DJNZ r6,$
+000E DFFA             20         DJNZ r7, delay1
+0010 22               21         RET
+                      22     
+                      23     END
+                             
+                             
+A51 MACRO ASSEMBLER  MAIN                                                                 11/14/2023 14:49:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   0008H   A   
+DELAY1 . . . . . .  C ADDR   000AH   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

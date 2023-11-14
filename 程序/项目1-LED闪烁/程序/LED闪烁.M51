@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    09/06/2023  08:41:34  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/17/2023  10:55:14  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
-F:\KEIL_V5\C51\C51\BIN\BL51.EXE main.obj TO LED…¡À∏
+F:\KEIL_V5\C51\C51\BIN\BL51.EXE main.obj, lut.obj TO LED…¡À∏
 
 
 MEMORY MODEL: SMALL
@@ -10,6 +10,7 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
+  lut.obj (LUT)
   F:\KEIL_V5\C51\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
@@ -24,10 +25,11 @@ LINK MAP OF MODULE:  LED…¡À∏ (MAIN)
             IDATA   0008H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     0016H     UNIT         ?PR?MAIN?MAIN
-            CODE    0019H     000FH     UNIT         ?PR?_DELAY?MAIN
-            CODE    0028H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0000H     001DH     ABSOLUTE     
+* OVERLAP * CODE    0000H     0003H     ABSOLUTE     
+            CODE    001DH     0016H     UNIT         ?PR?MAIN?MAIN
+            CODE    0033H     000FH     UNIT         ?PR?_DELAY?MAIN
+            CODE    0042H     000CH     UNIT         ?C_C51STARTUP
 
 
 
@@ -54,39 +56,59 @@ SYMBOL TABLE OF MODULE:  LED…¡À∏ (MAIN)
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   B:0080H.0       PUBLIC        LED_R
-  C:001DH         PUBLIC        _delay
-  C:0003H         PUBLIC        main
+  C:0037H         PUBLIC        _delay
+  C:001DH         PUBLIC        main
   B:0080H.1       PUBLIC        LED_B
-  C:0019H         SYMBOL        L?0009
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/17/2023  10:55:14  PAGE 2
+
+
+  C:0033H         SYMBOL        L?0009
   -------         PROC          L?0008
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  09/06/2023  08:41:34  PAGE 2
-
-
   -------         ENDPROC       L?0008
-  C:0019H         SYMBOL        L?0009
+  C:0033H         SYMBOL        L?0009
   -------         PROC          _DELAY
   D:0006H         SYMBOL        x
-  C:001DH         LINE#         10
-  C:001DH         LINE#         11
-  C:001DH         LINE#         12
-  C:0027H         LINE#         13
+  C:0037H         LINE#         10
+  C:0037H         LINE#         11
+  C:0037H         LINE#         12
+  C:0041H         LINE#         13
   -------         ENDPROC       _DELAY
   -------         PROC          MAIN
-  C:0003H         LINE#         14
-  C:0003H         LINE#         15
-  C:0003H         LINE#         16
-  C:0003H         LINE#         17
-  C:0003H         LINE#         18
-  C:0005H         LINE#         19
-  C:0008H         LINE#         20
-  C:000AH         LINE#         21
-  C:000DH         LINE#         22
-  C:000FH         LINE#         23
-  C:0012H         LINE#         24
-  C:0014H         LINE#         25
-  C:0017H         LINE#         26
+  C:001DH         LINE#         14
+  C:001DH         LINE#         15
+  C:001DH         LINE#         16
+  C:001DH         LINE#         17
+  C:001DH         LINE#         18
+  C:001FH         LINE#         19
+  C:0022H         LINE#         20
+  C:0024H         LINE#         21
+  C:0027H         LINE#         22
+  C:0029H         LINE#         23
+  C:002CH         LINE#         24
+  C:002EH         LINE#         25
+  C:0031H         LINE#         26
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
-Program Size: data=9.0 xdata=0 code=52
-LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
+  -------         MODULE        LUT
+  C:000EH         SYMBOL        SQR
+  C:0013H         SYMBOL        TAB
+  C:0000H         LINE#         65533
+  C:0002H         LINE#         2
+  C:0004H         LINE#         3
+  C:0005H         LINE#         4
+  C:0007H         LINE#         5
+  C:0009H         LINE#         6
+  C:000AH         LINE#         7
+  C:000CH         LINE#         8
+  C:000EH         LINE#         10
+  C:0011H         LINE#         11
+  C:0012H         LINE#         12
+  -------         ENDMOD        LUT
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      001CH
+
+Program Size: data=9.0 xdata=0 code=81
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

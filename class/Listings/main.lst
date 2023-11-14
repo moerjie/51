@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 11/07/2023 14:22:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main.obj
+ASSEMBLER INVOKED BY: F:\Keil_v5\C51\C51\BIN\A51.EXE main.a51 SET(SMALL) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\Objec
+                      ts\main.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 020100            2         LJMP MAIN
+0100                   3     ORG 0100H
+0100                   4       MAIN:
+0100 7410              5         MOV A,#10H
+0102 75F015            6         MOV B,#15H
+0105 7910              7         MOV r1,#10H
+0107 7A05              8         MOV r2,#05H
+0109 25F0              9         ADD A,B
+010B FB               10         MOV R3,A
+010C E9               11         MOV A,R1
+010D 8AF0             12         MOV B,R2
+010F A4               13         MUL AB
+0110 F8               14         mov r0,a
+                      15         ;MUL AB
+                      16     
+                      17     END
+A51 MACRO ASSEMBLER  MAIN                                                                 11/07/2023 14:22:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
